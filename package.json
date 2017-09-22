@@ -1,11 +1,22 @@
 {
   "name": "mobadraft",
   "version": "1.0.0",
-  "description": "",
+  "description":
+    "A web application dedicated to the drafting element of Moba PC games such as Heroes of The Storm, Dota 2, and League of Legends. This Will be used to improve the drafting element of players, amateur teams, and professional players.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "engines": {
+    "node": "8.1.2",
+    "npm": "5.4.2"
   },
-  "author": "",
-  "license": "ISC"
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Nicholas March",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^4.11.12"
+  }
 }
