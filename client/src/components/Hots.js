@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 import { fetchHotsHeroes } from '../actions/index';
+import Hero from './Hero';
 
 class Hots extends Component {
   componentDidMount() {
@@ -10,7 +12,15 @@ class Hots extends Component {
 
   render() {
     console.log(this.props);
-    return <div className="container" />;
+    return (
+      <div className="container center-align">
+        <h1>Heroes of the Storm</h1>
+        <Link to="/hots/new">
+          <a className="waves-effect waves-light btn">New Draft</a>
+        </Link>
+        <Hero variables={this.props.hotsHeroes} />
+      </div>
+    );
   }
 }
 
