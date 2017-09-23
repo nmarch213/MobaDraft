@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 import { fetchHotsHeroes } from '../actions/index';
 
 class Header extends Component {
-  componentDidMount() {
-    this.props.fetchHotsHeroes();
-  }
+  // componentDidMount() {
+  //   this.props.fetchHotsHeroes();
+  // }
 
   render() {
     return (
@@ -35,11 +35,11 @@ class Header extends Component {
     );
   }
 }
-const mapDispatchToProps = dispatch => {
-  return { fetchHotsHeroes: () => dispatch(fetchHotsHeroes()) };
-};
+// const mapDispatchToProps = dispatch => {
+//   return { fetchHotsHeroes: () => dispatch(fetchHotsHeroes()) };
+// };
 const mapStateToProps = state => {
   return {};
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Header);
+export default connect(mapStateToProps)(Header);
