@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import io from 'socket.io-client';
 
 import { fetchHotsHeroes } from '../../actions/index';
-
 import HotsDraftHeroPool from './HotsDraftHeroPool';
 
 class HotsDraft extends Component {
   componentDidMount() {
     this.props.fetchHotsHeroes();
+    const socket = io('http://localhost:5000');
+    socket.on('connect', () => {
+      console.log(socket.id);
+    });
   }
 
   render() {

@@ -5,7 +5,9 @@ import Hero from './Hero';
 
 class HotsDraftHeroPool extends Component {
   renderHeroPool() {
-    return _.map(this.props.hotsHeroes, hero => <Hero hero={hero} />);
+    return _.map(this.props.hotsHeroes, hero => (
+      <Hero key={hero.id} hero={hero} />
+    ));
   }
 
   render() {

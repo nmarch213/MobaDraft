@@ -7,7 +7,10 @@ class Hero extends Component {
         <a href={this.props.hero.url}>
           <div className="card col s3 m2 l2">
             <div className="card-image">
-              <img src={this.props.hero.portrait.medium} />
+              <img
+                src={this.props.hero.portrait.medium}
+                alt={this.props.hero.name}
+              />
             </div>
           </div>
         </a>
