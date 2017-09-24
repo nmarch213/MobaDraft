@@ -1,0 +1,30 @@
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+
+import { fetchHotsHeroes } from '../../actions/index';
+
+import HotsDraftHeroPool from './HotsDraftHeroPool';
+
+class HotsDraft extends Component {
+  componentDidMount() {
+    this.props.fetchHotsHeroes();
+  }
+
+  render() {
+    return (
+      <div className="container center-align">
+        <h1>HotsDraft</h1>
+        <HotsDraftHeroPool hotsHeroes={this.props.hotsHeroes} />
+      </div>
+    );
+  }
+}
+const mapDispatchToProps = dispatch => {
+  return { fetchHotsHeroes: () => dispatch(fetchHotsHeroes()) };
+};
+
+function mapStateToProps({ hotsHeroes }) {
+  return { hotsHeroes };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(HotsDraft);

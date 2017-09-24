@@ -2,13 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
-import { fetchHotsHeroes } from '../actions/index';
-
 class Header extends Component {
-  // componentDidMount() {
-  //   this.props.fetchHotsHeroes();
-  // }
-
   render() {
     return (
       <nav>
@@ -35,9 +29,7 @@ class Header extends Component {
     );
   }
 }
-// const mapDispatchToProps = dispatch => {
-//   return { fetchHotsHeroes: () => dispatch(fetchHotsHeroes()) };
-// };
+
 const mapStateToProps = state => {
   return {};
 };
