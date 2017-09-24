@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 import { fetchHotsHeroes } from '../../actions/index';
+import HotsNewDraft from './HotsNewDraft';
 
 class Hots extends Component {
   componentDidMount() {
@@ -17,6 +18,7 @@ class Hots extends Component {
         <Link to="/hots/draft">
           <a className="waves-effect waves-light btn">New Draft</a>
         </Link>
+        <HotsNewDraft />
       </div>
     );
   }
