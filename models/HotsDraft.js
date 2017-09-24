@@ -1,5 +1,6 @@
 const mongoose = require('mongoose'),
   Schema = mongoose.Schema;
+const moment = require('moment');
 
 var HotsDraft = new Schema({
   teamOneName: String,
@@ -12,7 +13,10 @@ var HotsDraft = new Schema({
   teamTwoDraft: [],
   teamOneWon: Number,
   teamTwoWon: Number,
-  date: Date.now();
-})
+  date: {
+    type: Date,
+    default: moment().format('MMMM Do YYYY, h:mm:ss a')
+  }
+});
 
 module.exports = mongoose.model('HotsDraft', HotsDraft);

@@ -17,6 +17,7 @@
   "license": "ISC",
   "dependencies": {
     "concurrently": "^3.5.0",
+    "moment": "^2.18.1",
     "mongoose": "^4.11.12",
     "nodemon": "^1.12.1",
     "socket.io": "^2.0.3"
