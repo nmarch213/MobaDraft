@@ -10,8 +10,9 @@ class Hots extends Component {
     this.props.fetchHotsHeroes();
   }
 
+  newDraftSubmit() {}
+
   render() {
-    console.log(this.props);
     return (
       <div className="">
         <div className="jumbotron">
@@ -22,7 +23,7 @@ class Hots extends Component {
             </button>
           </Link>
         </div>
-        <HotsNewDraft />
+        <HotsNewDraft handleSubmit={this.newDraftSubmit} />
       </div>
     );
   }

@@ -18,7 +18,7 @@ class HotsDraft extends Component {
     return (
       <div className="">
         <div className="jumbotron">
-          <h1>HotsDraft</h1>
+          <h1>Heroes of The Storm Draft</h1>
         </div>
         <HotsDraftHeroPool hotsHeroes={this.props.hotsHeroes} />
       </div>

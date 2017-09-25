@@ -6,7 +6,7 @@ class Header extends Component {
   render() {
     return (
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="/">
           MobaDraft
         </a>
         <button
