@@ -13,7 +13,7 @@ class HotsDraftHeroPool extends Component {
   render() {
     console.log(this.props);
     return (
-      <div className="container align-center">
+      <div className="container">
         <h2>Heroes</h2>
         <div className="row">{this.renderHeroPool()}</div>
       </div>

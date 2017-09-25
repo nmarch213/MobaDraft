@@ -13,11 +13,15 @@ class Hots extends Component {
   render() {
     console.log(this.props);
     return (
-      <div className="container center-align">
-        <h1>Heroes of the Storm</h1>
-        <Link to="/hots/draft">
-          <a className="waves-effect waves-light btn">New Draft</a>
-        </Link>
+      <div className="">
+        <div className="jumbotron">
+          <h1 className="display-3 align-self-center">Heroes of the Storm</h1>
+          <Link to="/hots/draft">
+            <button type="button" className="btn btn-primary">
+              New Draft
+            </button>
+          </Link>
+        </div>
         <HotsNewDraft />
       </div>
     );

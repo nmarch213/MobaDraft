@@ -16,8 +16,10 @@ class HotsDraft extends Component {
 
   render() {
     return (
-      <div className="container center-align">
-        <h1>HotsDraft</h1>
+      <div className="">
+        <div className="jumbotron">
+          <h1>HotsDraft</h1>
+        </div>
         <HotsDraftHeroPool hotsHeroes={this.props.hotsHeroes} />
       </div>
     );
