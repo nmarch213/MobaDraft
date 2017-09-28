@@ -20,7 +20,7 @@ class HotsDraft extends Component {
         <div className="jumbotron">
           <h1>Heroes of The Storm Draft</h1>
         </div>
-        <HotsDraftHeroPool hotsHeroes={this.props.hotsHeroes} />
+        <HotsDraftHeroPool hotsHeroes={this.props.hots.Heroes} />
       </div>
     );
   }
@@ -29,8 +29,8 @@ const mapDispatchToProps = dispatch => {
   return { fetchHotsHeroes: () => dispatch(fetchHotsHeroes()) };
 };
 
-function mapStateToProps({ hotsHeroes }) {
-  return { hotsHeroes };
+function mapStateToProps({ hots }) {
+  return { hots };
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(HotsDraft);

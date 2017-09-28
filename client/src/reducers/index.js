@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import hotsHeroesReducer from './hotsHeroesReducer';
+import hotsReducer from './hotsReducer';
 import { reducer as reduxFormReducer } from 'redux-form';
 
 export default combineReducers({
-  hotsHeroes: hotsHeroesReducer,
+  hots: hotsReducer,
   form: reduxFormReducer
 });

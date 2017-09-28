@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
 const app = express();
 const server = require('http').createServer(app);
 const io = require('socket.io')(server);
@@ -12,10 +13,14 @@ const hotsDraftController = require('./controllers/hotsDraft');
 
 mongoose.connect(keys.mongoURI, { useMongoClient: true });
 
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
 io.on('connection', function(socket) {
   console.log('a user connected');
 });
 
+//This is test data for the hotsDraftController
 var draft1 = {
   teamOneName: 'metalwarrior',
   teamTwoName: 'hurtox',
@@ -23,7 +28,8 @@ var draft1 = {
   coinToss: 'teamOne'
 };
 
-hotsDraftController.newHotsDraftLobby(draft1);
+//This function call is used for testing the DB for hotsDraftController
+// hotsDraftController.newHotsDraftLobby(draft1);
 
 //Routes
 require('./routes/hotsRoutes')(app);

@@ -2,10 +2,10 @@ import React from 'react';
 import { Field, reduxForm } from 'redux-form';
 
 const HotsNewDraft = props => {
-  const { handleSubmit, pristine, submitting } = props;
+  const { handleSubmit, pristine, submitting, onSubmit } = props;
   return (
     <div className="container-fluid">
-      <form className="form-group" onSubmit={handleSubmit}>
+      <form className="form-group" onSubmit={handleSubmit(onSubmit)}>
         <div className="row">
           <div className="form-group col">
             <label htmlFor="teamOneName">Team 1 Name</label>
@@ -70,7 +70,7 @@ const HotsNewDraft = props => {
                   name="sex"
                   component="input"
                   type="radio"
-                  value="TeamTwo"
+                  value="teamTwo"
                 />{' '}
                 Team two
               </label>

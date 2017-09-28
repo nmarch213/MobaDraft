@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
-import { fetchHotsHeroes } from '../../actions/index';
+import { fetchHotsHeroes, postHotsDraftLobby } from '../../actions/index';
 import HotsNewDraft from './HotsNewDraft';
 
 class Hots extends Component {
@@ -10,7 +10,9 @@ class Hots extends Component {
     this.props.fetchHotsHeroes();
   }
 
-  newDraftSubmit() {}
+  newDraftSubmit = values => {
+    this.props.postHotsDraftLobby(values);
+  };
 
   render() {
     return (
@@ -23,18 +25,21 @@ class Hots extends Component {
             </button>
           </Link>
         </div>
-        <HotsNewDraft handleSubmit={this.newDraftSubmit} />
+        <HotsNewDraft onSubmit={this.newDraftSubmit.bind(this)} />
       </div>
     );
   }
 }
 
 const mapDispatchToProps = dispatch => {
-  return { fetchHotsHeroes: () => dispatch(fetchHotsHeroes()) };
+  return {
+    fetchHotsHeroes: () => dispatch(fetchHotsHeroes()),
+    postHotsDraftLobby: values => dispatch(postHotsDraftLobby(values))
+  };
 };
 
-function mapStateToProps({ hotsHeroes }) {
-  return { hotsHeroes };
+function mapStateToProps({ hots, form }) {
+  return { hots, form };
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Hots);

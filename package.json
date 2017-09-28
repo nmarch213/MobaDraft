@@ -16,6 +16,7 @@
   "author": "Nicholas March",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "concurrently": "^3.5.0",
     "moment": "^2.18.1",
     "mongoose": "^4.11.13",
