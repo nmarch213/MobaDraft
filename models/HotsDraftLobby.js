@@ -12,7 +12,7 @@ var HotsDraftLobby = new Schema({
     ref: 'HotsDraft'
   },
   date: {
-    type: Date,
+    type: String,
     default: moment().format('MMMM Do YYYY, h:mm:ss a')
   }
 });
