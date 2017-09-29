@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 
 import { fetchHotsHeroes, postHotsDraftLobby } from '../../actions/index';
 import HotsNewDraft from './HotsNewDraft';
@@ -15,6 +15,11 @@ class Hots extends Component {
   };
 
   render() {
+    const { Lobby } = this.props.hots;
+
+    if (Lobby) {
+      return <Redirect to="/hots/draft" lobby={Lobby} />;
+    }
     return (
       <div className="">
         <div className="jumbotron">

@@ -8,11 +8,12 @@ export default function(state = {}, action) {
         ...state,
         Heroes: _.mapKeys(action.payload.results, 'id')
       };
-    // case POST_HOTS_DRAFT_LOBBY:
-    // return {
-    //   ...state,
-    //   Lobby:
-    // }
+    case POST_HOTS_DRAFT_LOBBY:
+      console.log(action.payload);
+      return {
+        ...state,
+        Lobby: action.payload
+      };
     default:
       return state;
   }

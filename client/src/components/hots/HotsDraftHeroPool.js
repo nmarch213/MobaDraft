@@ -11,7 +11,6 @@ class HotsDraftHeroPool extends Component {
   }
 
   render() {
-    console.log(this.props);
     return (
       <div className="container">
         <h2>Heroes</h2>

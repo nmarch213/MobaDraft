@@ -7,7 +7,9 @@ const hotsDraftController = require('../controllers/hotsDraft');
 
 module.exports = app => {
   app.post('/api/hotsNewDraft', (req, res) => {
-    console.log(req.body);
-    res.send({ hi: 'there' });
+    hotsDraftController.newHotsDraftLobby(req.body, function(err, draftLobby) {
+      console.log(draftLobby);
+      res.send(draftLobby);
+    });
   });
 };

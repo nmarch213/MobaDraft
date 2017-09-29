@@ -7,7 +7,7 @@ const HotsDraft = require('../models/HotsDraft');
 const HotsDraftLobby = require('../models/HotsDraftLobby');
 
 module.exports = {
-  newHotsDraftLobby: function(draft) {
+  newHotsDraftLobby: function(draft, callback) {
     var newHotsDraftLobby = {
       teamOneName: draft.teamOneName,
       teamTwoName: draft.teamTwoName,
@@ -21,7 +21,7 @@ module.exports = {
     ) {
       if (err) {
         winston.error('Creating a new draft lobby has failed: ' + err);
-        return;
+        return callback(err);
       }
 
       newHotsDraft(draft.map, draft.coinToss, addedHotsDraftLobby._id);
@@ -29,6 +29,18 @@ module.exports = {
       winston.info(
         addedHotsDraftLobby._id + ' has been created and is running!'
       );
+      callback(null, addedHotsDraftLobby);
+    });
+  },
+
+  getHotsDraftLobby: function(lobbyId, callback) {
+    HotsDraftLobby.findOneById(lobbyId, function(err, foundLobby) {
+      if (err) {
+        winston.error('There was an error finding lobby: ' + lobbyId);
+        return callback(err);
+      }
+      winston.info(foundLobby._id + ' has been found');
+      callback(null, foundLobby);
     });
   }
 };
