@@ -34,14 +34,16 @@ module.exports = {
   },
 
   getHotsDraftLobby: function(lobbyId, callback) {
-    HotsDraftLobby.findOneById(lobbyId, function(err, foundLobby) {
-      if (err) {
-        winston.error('There was an error finding lobby: ' + lobbyId);
-        return callback(err);
-      }
-      winston.info(foundLobby._id + ' has been found');
-      callback(null, foundLobby);
-    });
+    HotsDraftLobby.findById(lobbyId)
+      .populate('HotsDraft')
+      .exec(function(err, foundLobby) {
+        if (err) {
+          winston.error('There was an error finding lobby: ' + lobbyId);
+          return callback(err);
+        }
+        winston.info(foundLobby._id + ' has been found');
+        callback(null, foundLobby);
+      });
   }
 };
 
@@ -59,9 +61,7 @@ function newHotsDraft(map, coinToss, draftLobbyId) {
     HotsDraftLobby.findOneAndUpdate(
       { _id: draftLobbyId },
       {
-        $push: {
-          draft: addedHotsDraft._id
-        }
+        HotsDraft: addedHotsDraft._id
       },
       function(err, updatedHotsDraftLobby) {
         if (err) {

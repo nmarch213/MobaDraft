@@ -7,7 +7,7 @@ var HotsDraftLobby = new Schema({
   teamTwoName: String,
   teamOneToken: String,
   teamTwoToken: String,
-  draft: {
+  HotsDraft: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'HotsDraft'
   },

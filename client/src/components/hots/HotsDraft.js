@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import io from 'socket.io-client';
 
-import { fetchHotsHeroes } from '../../actions/index';
+import { fetchHotsHeroes, fetchHotsDraftLobby } from '../../actions/index';
 import HotsDraftHeroPool from './HotsDraftHeroPool';
+import HotsTeamDraft from './HotsTeamDraft';
 
 class HotsDraft extends Component {
   componentDidMount() {
@@ -12,21 +14,39 @@ class HotsDraft extends Component {
     socket.on('connect', () => {
       console.log(socket.id);
     });
+
+    if (this.props.hots.Lobby) {
+      this.props.fetchHotsDraftLobby(this.props.hots.Lobby._id);
+    }
   }
 
   render() {
+    const { Lobby, Heroes } = this.props.hots;
+    if (!Lobby) {
+      return <Redirect to="/hots" />;
+    }
     return (
-      <div className="">
-        <div className="jumbotron">
-          <h1>Heroes of The Storm Draft</h1>
-        </div>
-        <HotsDraftHeroPool hotsHeroes={this.props.hots.Heroes} />
+      <div className="row">
+        <HotsTeamDraft
+          teamName={Lobby.teamOneName}
+          token={Lobby.teamOneToken}
+          hotsHeroes={Heroes}
+        />
+        <HotsDraftHeroPool hotsHeroes={Heroes} />
+        <HotsTeamDraft
+          teamName={Lobby.teamTwoName}
+          token={Lobby.teamTwoToken}
+          hotsHeroes={Heroes}
+        />
       </div>
     );
   }
 }
 const mapDispatchToProps = dispatch => {
-  return { fetchHotsHeroes: () => dispatch(fetchHotsHeroes()) };
+  return {
+    fetchHotsHeroes: () => dispatch(fetchHotsHeroes()),
+    fetchHotsDraftLobby: id => dispatch(fetchHotsDraftLobby(id))
+  };
 };
 
 function mapStateToProps({ hots }) {

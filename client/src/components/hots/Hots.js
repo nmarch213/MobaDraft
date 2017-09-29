@@ -8,6 +8,7 @@ import HotsNewDraft from './HotsNewDraft';
 class Hots extends Component {
   componentDidMount() {
     this.props.fetchHotsHeroes();
+    console.log(this.props);
   }
 
   newDraftSubmit = values => {
