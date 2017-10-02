@@ -4,25 +4,16 @@ import _ from 'lodash';
 import Hero from './Hero';
 
 class HotsDraftHeroPool extends Component {
-  constructor(props) {
-    super(props);
-
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick = hero => {
-    console.log(hero);
-  };
-
   renderHeroPool() {
     return _.map(this.props.hotsHeroes, hero => (
-      <button key={hero.id} onClick={() => this.handleClick(hero)}>
+      <button key={hero.id} onClick={() => this.props.onClick(hero)}>
         <Hero hero={hero} />
       </button>
     ));
   }
 
   render() {
+    console.log(this.props);
     return (
       <div className="container col-6">
         <h2>Heroes</h2>

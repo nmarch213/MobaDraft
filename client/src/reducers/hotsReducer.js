@@ -27,31 +27,38 @@ export default function(state = {}, action) {
         Lobby: action.payload
       };
     case TEAM_ONE_HERO_SELECTED:
+      console.log(state);
       return {
         ...state,
-        Draft: {
-          teamOneDraft: [...state.teamOneDraft, action.payload]
+        Lobby: {
+          HotsDraft: {
+            teamOneDraft: state.Lobby.HotsDraft.teamOneDraft.concat(
+              action.payload
+            )
+          }
         }
       };
     case TEAM_TWO_HERO_SELECTED:
       return {
         ...state,
-        Draft: {
-          teamTwoDraft: [...state.teamTwoDraft, action.payload]
+        HotsDraft: {
+          teamTwoDraft: state.Lobby.HotsDraft.teamTwoDraft.concat(
+            action.payload
+          )
         }
       };
     case TEAM_ONE_HERO_BANNED:
       return {
         ...state,
-        Draft: {
-          teamOneBans: [...state.teamOneBans, action.payload]
+        HotsDraft: {
+          teamOneBans: state.Lobby.HotsDraft.teamOneBans.concat(action.payload)
         }
       };
     case TEAM_TWO_HERO_BANNED:
       return {
         ...state,
-        Draft: {
-          teamTwoDraft: [...state.teamTwoBans, action.payload]
+        HotsDraft: {
+          teamTwoDraft: state.Lobby.HotsDraft.teamTwoBans.concat(action.payload)
         }
       };
     default:

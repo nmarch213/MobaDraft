@@ -53,7 +53,7 @@ const HotsNewDraft = props => {
             <div className="form-check">
               <label className="form-check-label">
                 <Field
-                  name="sex"
+                  name="team"
                   component="input"
                   type="radio"
                   value="teamOne"
@@ -67,7 +67,7 @@ const HotsNewDraft = props => {
               <label className="form-check-label">
                 <Field
                   className="form-check-input"
-                  name="sex"
+                  name="team"
                   component="input"
                   type="radio"
                   value="teamTwo"

@@ -18,7 +18,17 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname));
 
 io.on('connection', function(socket) {
-  console.log('a user connected');
+  console.log('user connected');
+  socket.emit('hasChannel');
+
+  socket.on('session', function(data) {
+    console.log(data.id);
+  });
+
+  socket.on('hero', function(data) {
+    console.log(data.hero.name);
+    socket.emit('heroDrafted', { success: 'sucess' });
+  });
 });
 
 //This is test data for the hotsDraftController

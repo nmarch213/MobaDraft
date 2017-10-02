@@ -12,22 +12,20 @@ import HotsDraftPreLobby from './hots/HotsDraftPreLobby';
 class App extends Component {
   render() {
     return (
-      <div>
-        <BrowserRouter>
-          <div>
-            <Header />
-            <Route exact path="/" component={Landing} />
-            <Route exact path="/hots" component={Hots} />
-            <Route
-              exact
-              path="/hots/draft/:id/:drafterToken"
-              component={HotsDraft}
-            />
-            <Route exact path="/hots/draft/:id" component={HotsDraft} />
-            <Route exact path="/hots/draft" component={HotsDraftPreLobby} />
-          </div>
-        </BrowserRouter>
-      </div>
+      <BrowserRouter>
+        <div>
+          <Header />
+          <Route exact path="/" component={Landing} />
+          <Route exact path="/hots" component={Hots} />
+          <Route
+            exact
+            path="/hots/draft/:id/:drafterToken"
+            component={HotsDraft}
+          />
+          <Route exact path="/hots/draft/:id" component={HotsDraft} />
+          <Route exact path="/hots/draft" component={HotsDraftPreLobby} />
+        </div>
+      </BrowserRouter>
     );
   }
 }

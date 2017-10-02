@@ -2,13 +2,16 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link, Redirect } from 'react-router-dom';
 
-import { fetchHotsHeroes, postHotsDraftLobby } from '../../actions/index';
+import {
+  fetchHotsHeroes,
+  postHotsDraftLobby,
+  fetchHotsDraftLobby
+} from '../../actions/index';
 import HotsNewDraft from './HotsNewDraft';
 
 class Hots extends Component {
   componentDidMount() {
     this.props.fetchHotsHeroes();
-    console.log(this.props);
   }
 
   newDraftSubmit = values => {
@@ -19,7 +22,8 @@ class Hots extends Component {
     const { Lobby } = this.props.hots;
 
     if (Lobby) {
-      return <Redirect to="/hots/draft" lobby={Lobby} />;
+      this.props.fetchHotsDraftLobby(Lobby._id);
+      return <Redirect to="/hots/draft" />;
     }
     return (
       <div className="">
@@ -31,7 +35,7 @@ class Hots extends Component {
             </button>
           </Link>
         </div>
-        <HotsNewDraft onSubmit={this.newDraftSubmit.bind(this)} />
+        <HotsNewDraft onSubmit={this.newDraftSubmit} />
       </div>
     );
   }
@@ -40,6 +44,7 @@ class Hots extends Component {
 const mapDispatchToProps = dispatch => {
   return {
     fetchHotsHeroes: () => dispatch(fetchHotsHeroes()),
+    fetchHotsDraftLobby: id => dispatch(fetchHotsDraftLobby(id)),
     postHotsDraftLobby: values => dispatch(postHotsDraftLobby(values))
   };
 };
