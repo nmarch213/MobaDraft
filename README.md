@@ -1,8 +1,22 @@
-cd client
-npm install
+### Installation
 
-cd ../server
-npm install
+Install the client dependencies.
 
-cd ..
-npm start
+```sh
+$ cd client
+$ npm install
+```
+
+Install the server dependencies.
+
+```sh
+$ cd server
+$ npm install
+```
+
+Start the client & server.
+
+```sh
+$ npm start // from the root directory
+```
+
