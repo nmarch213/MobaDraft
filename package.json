@@ -1,28 +1,25 @@
 {
-  "name": "mobadraft",
+  "name": "MobaDraft",
   "version": "1.0.0",
-  "description": "A web application dedicated to the drafting element of Moba PC games such as Heroes of The Storm, Dota 2, and League of Legends. This Will be used to improve the drafting element of players, amateur teams, and professional players.",
+  "description": "",
   "main": "index.js",
-  "engines": {
-    "node": "8.1.2",
-    "npm": "5.4.2"
-  },
   "scripts": {
-    "start": "node index.js",
-    "server": "nodemon index.js",
-    "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "server": "cd server && npm run start",
+    "client": "cd client && npm run start",
+    "start": "concurrently --kill-others \"npm run client | npm run server\""
   },
-  "author": "Nicholas March",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nmarch213/MobaDraft.git"
+  },
+  "keywords": [],
+  "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nmarch213/MobaDraft/issues"
+  },
+  "homepage": "https://github.com/nmarch213/MobaDraft#readme",
   "dependencies": {
-    "body-parser": "^1.18.2",
-    "concurrently": "^3.5.0",
-    "moment": "^2.18.1",
-    "mongoose": "^4.11.14",
-    "nodemon": "^1.12.1",
-    "randomstring": "^1.1.5",
-    "socket.io": "^2.0.3",
-    "winston": "^2.3.1"
+    "concurrently": "^3.5.0"
   }
 }
