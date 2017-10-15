@@ -4,22 +4,29 @@ import _ from 'lodash';
 import Hero from './Hero';
 
 class HotsTeamDraft extends Component {
-  renderDraft = () => {
-    if (this.props.Lobby.HotsDraft) {
-      return _.map(`this.props.Lobby.HotsDraft.${this.props.draft}`, hero => (
-        <div key={hero.id} className="row">
-          <Hero hero={`this.props.hotsHeroes.${hero.id}`} />
-        </div>
-      ));
+  showHeroes = (team, heroes) => {
+    return _.map(team, hero => (
+      <div className="row">
+        <Hero key={hero} hero={heroes[hero]} />
+      </div>
+    ));
+  };
+  renderDraft = (draft, heroes, Lobby) => {
+    if (Lobby.HotsDraft) {
+      if (draft == 'teamOneDraft') {
+        return this.showHeroes(Lobby.HotsDraft.teamOneDraft, heroes);
+      } else {
+        return this.showHeroes(Lobby.HotsDraft.teamTwoDraft, heroes);
+      }
     }
   };
 
   render() {
-    console.log(this.props);
+    const { Lobby, draft, teamName, hotsHeroes } = this.props;
     return (
       <div className="col-3">
-        <div>{this.props.teamName}</div>
-        {this.renderDraft()}
+        <div>{teamName}</div>
+        {this.renderDraft(draft, hotsHeroes, Lobby)}
       </div>
     );
   }

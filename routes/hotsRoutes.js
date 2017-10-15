@@ -13,6 +13,7 @@ module.exports = app => {
         updatedLobby
       ) {
         res.send(updatedLobby);
+        //NOTE: Change to res.json
       });
     });
   });

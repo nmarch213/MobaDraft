@@ -50,7 +50,9 @@ module.exports = {
 function newHotsDraft(map, coinToss, draftLobbyId) {
   var newHotsDraft = {
     map: map,
-    coinToss: coinToss
+    coinToss: coinToss,
+    teamOneDraft: [1, 2, 3, 4, 5],
+    teamTwoDraft: [1, 2, 3, 4, 5]
   };
 
   HotsDraft.create(newHotsDraft, function(err, addedHotsDraft) {

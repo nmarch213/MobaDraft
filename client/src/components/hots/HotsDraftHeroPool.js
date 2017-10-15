@@ -13,7 +13,6 @@ class HotsDraftHeroPool extends Component {
   }
 
   render() {
-    console.log(this.props);
     return (
       <div className="container col-6">
         <h2>Heroes</h2>
