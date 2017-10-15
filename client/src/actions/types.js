@@ -1,5 +1,3 @@
-export const FETCH_HOTS_HEROES = 'fetch_hots_heroes';
-
 export const FETCH_HOTS_DRAFT_LOBBY = 'fetch_hots_draft_lobby';
 export const POST_HOTS_DRAFT_LOBBY = 'post_hots_draft_lobby';
 

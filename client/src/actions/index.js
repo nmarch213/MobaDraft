@@ -1,6 +1,5 @@
 import axios from 'axios';
 import {
-  FETCH_HOTS_HEROES,
   FETCH_HOTS_DRAFT_LOBBY,
   POST_HOTS_DRAFT_LOBBY,
   TEAM_ONE_HERO_SELECTED,
@@ -8,13 +7,6 @@ import {
   TEAM_TWO_HERO_BANNED,
   TEAM_ONE_HERO_BANNED
 } from './types';
-
-export const fetchHotsHeroes = () => async dispatch => {
-  const res = await axios.get(
-    'https://api.masterleague.net/heroes/?page_size=100&format=json'
-  );
-  dispatch({ type: FETCH_HOTS_HEROES, payload: res.data });
-};
 
 export const postHotsDraftLobby = values => async dispatch => {
   const res = await axios.post('/api/hotsNewDraft', values);

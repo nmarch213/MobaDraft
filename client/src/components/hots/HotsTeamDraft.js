@@ -7,7 +7,7 @@ class HotsTeamDraft extends Component {
   showHeroes = (team, heroes) => {
     return _.map(team, hero => (
       <div className="row">
-        <Hero key={hero} hero={heroes[hero]} />
+        <Hero hero={heroes[hero]} />
       </div>
     ));
   };
@@ -26,7 +26,7 @@ class HotsTeamDraft extends Component {
     return (
       <div className="col-3">
         <div>{teamName}</div>
-        {this.renderDraft(draft, hotsHeroes, Lobby)}
+        {/* {this.renderDraft(draft, hotsHeroes, Lobby)} */}
       </div>
     );
   }

@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import io from 'socket.io-client';
-
+import Heroes from './Heroes/hotsHeroes.json';
 import {
-  fetchHotsHeroes,
   fetchHotsDraftLobby,
   teamOneHeroBanned,
   teamOneHeroSelected,
@@ -16,8 +15,6 @@ import HotsTeamDraft from './HotsTeamDraft';
 
 class HotsDraft extends Component {
   componentDidMount() {
-    this.props.fetchHotsHeroes();
-
     if (this.props.hots.Lobby) {
       this.props.fetchHotsDraftLobby(this.props.hots.Lobby._id);
     }
@@ -33,7 +30,7 @@ class HotsDraft extends Component {
   };
 
   render() {
-    const { Lobby, Heroes } = this.props.hots;
+    const { Lobby } = this.props.hots;
     const { drafterToken, id } = this.props.match.params;
     if (!Lobby) {
       return <Redirect to="/hots" />;
@@ -72,7 +69,6 @@ class HotsDraft extends Component {
 }
 const mapDispatchToProps = dispatch => {
   return {
-    fetchHotsHeroes: () => dispatch(fetchHotsHeroes()),
     fetchHotsDraftLobby: id => dispatch(fetchHotsDraftLobby(id)),
     teamOneHeroSelected: id => dispatch(teamOneHeroSelected(id)),
     teamTwoHeroSelected: id => dispatch(teamTwoHeroSelected(id)),

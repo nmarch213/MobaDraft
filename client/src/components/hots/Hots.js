@@ -2,18 +2,10 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link, Redirect } from 'react-router-dom';
 
-import {
-  fetchHotsHeroes,
-  postHotsDraftLobby,
-  fetchHotsDraftLobby
-} from '../../actions/index';
+import { postHotsDraftLobby, fetchHotsDraftLobby } from '../../actions/index';
 import HotsNewDraft from './HotsNewDraft';
 
 class Hots extends Component {
-  componentDidMount() {
-    this.props.fetchHotsHeroes();
-  }
-
   newDraftSubmit = values => {
     this.props.postHotsDraftLobby(values);
   };
@@ -43,7 +35,6 @@ class Hots extends Component {
 
 const mapDispatchToProps = dispatch => {
   return {
-    fetchHotsHeroes: () => dispatch(fetchHotsHeroes()),
     fetchHotsDraftLobby: id => dispatch(fetchHotsDraftLobby(id)),
     postHotsDraftLobby: values => dispatch(postHotsDraftLobby(values))
   };
