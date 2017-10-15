@@ -19,7 +19,7 @@ class Hots extends Component {
     }
     return (
       <div className="">
-        <div className="jumbotron">
+        <div className="">
           <h1 className="display-3 align-self-center">Heroes of the Storm</h1>
           <Link to="/hots/draft">
             <button type="button" className="btn btn-primary">
