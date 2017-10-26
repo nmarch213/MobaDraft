@@ -1,19 +1,18 @@
 import React, { Component } from 'react';
-import _ from 'lodash';
 
 import Hero from './Hero';
 
 class HotsTeamDraft extends Component {
   showHeroes = (team, heroes) => {
-    return _.map(team, hero => (
-      <div className="row">
+    return team.map(hero => (
+      <div key={heroes[hero].name} className="row">
         <Hero hero={heroes[hero]} />
       </div>
     ));
   };
   renderDraft = (draft, heroes, Lobby) => {
     if (Lobby.HotsDraft) {
-      if (draft == 'teamOneDraft') {
+      if (draft === 'teamOneDraft') {
         return this.showHeroes(Lobby.HotsDraft.teamOneDraft, heroes);
       } else {
         return this.showHeroes(Lobby.HotsDraft.teamTwoDraft, heroes);
@@ -26,7 +25,7 @@ class HotsTeamDraft extends Component {
     return (
       <div className="col-3">
         <div>{teamName}</div>
-        {/* {this.renderDraft(draft, hotsHeroes, Lobby)} */}
+        {this.renderDraft(draft, hotsHeroes, Lobby)}
       </div>
     );
   }

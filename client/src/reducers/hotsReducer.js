@@ -1,4 +1,3 @@
-import _ from 'lodash';
 import {
   FETCH_HOTS_DRAFT_LOBBY,
   POST_HOTS_DRAFT_LOBBY,
