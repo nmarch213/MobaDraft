@@ -11,6 +11,9 @@ require('./models/HotsDraftLobby');
 //controller
 const hotsDraftController = require('./controllers/hotsDraft');
 
+//services
+const hotsApiService = require('./services/hotsAPI');
+
 mongoose.connect(keys.mongoURI, { useMongoClient: true });
 
 app.use(bodyParser.json());
@@ -41,6 +44,9 @@ var draft1 = {
 
 //This function call is used for testing the DB for hotsDraftController
 // hotsDraftController.newHotsDraftLobby(draft1);
+
+//This function gets the heroes
+// hotsApiService.getHotsHeroes('http://hotsapi.net/api/v1/heroes');
 
 //Routes
 require('./routes/hotsRoutes')(app);

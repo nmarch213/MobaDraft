@@ -16,13 +16,17 @@
   "author": "Nicholas March",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.17.0",
     "body-parser": "^1.18.2",
+    "cheerio": "^1.0.0-rc.2",
     "concurrently": "^3.5.0",
     "express": "^4.16.2",
+    "jsonfile": "^4.0.0",
     "moment": "^2.18.1",
     "mongoose": "^4.11.14",
     "nodemon": "^1.12.1",
     "randomstring": "^1.1.5",
+    "request": "^2.83.0",
     "socket.io": "^2.0.3",
     "winston": "^2.3.1"
   }
