@@ -1,440 +1,513 @@
 [
   {
+    "id": 0,
     "name": "Abathur",
     "role": "Specialist",
     "type": "Melee",
     "icon": "http://s3.hotsapi.net/img/heroes/92x93/abathur.png"
   },
   {
+    "id": 1,
     "name": "Alarak",
     "role": "Assassin",
     "type": "Melee",
     "icon": "http://s3.hotsapi.net/img/heroes/92x93/alarak.png"
   },
   {
-    "name": "Arthas",
-    "role": "Warrior",
-    "type": "Melee",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/arthas.png"
-  },
-  {
-    "name": "Artanis",
-    "role": "Warrior",
-    "type": "Melee",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/artanis.png"
-  },
-  {
+    "id": 2,
     "name": "Anub'arak",
     "role": "Warrior",
     "type": "Melee",
     "icon": "http://s3.hotsapi.net/img/heroes/92x93/anubarak.png"
   },
   {
-    "name": "Azmodan",
-    "role": "Specialist",
-    "type": "Ranged",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/azmodan.png"
-  },
-  {
-    "name": "Brightwing",
-    "role": "Support",
-    "type": "Ranged",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/brightwing.png"
-  },
-  {
-    "name": "Cho",
+    "id": 3,
+    "name": "Artanis",
     "role": "Warrior",
     "type": "Melee",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/cho.png"
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/artanis.png"
   },
   {
+    "id": 5,
     "name": "Auriel",
     "role": "Support",
     "type": "Ranged",
     "icon": "http://s3.hotsapi.net/img/heroes/92x93/auriel.png"
   },
   {
+    "id": 6,
+    "name": "Azmodan",
+    "role": "Specialist",
+    "type": "Ranged",
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/azmodan.png"
+  },
+  {
+    "id": 7,
+    "name": "Brightwing",
+    "role": "Support",
+    "type": "Ranged",
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/brightwing.png"
+  },
+  {
+    "id": 8,
     "name": "Cassia",
     "role": "Assassin",
     "type": "Ranged",
     "icon": "http://s3.hotsapi.net/img/heroes/92x93/cassia.png"
   },
   {
-    "name": "Chromie",
-    "role": "Assassin",
-    "type": "Ranged",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/chromie.png"
-  },
-  {
+    "id": 9,
     "name": "Chen",
     "role": "Warrior",
     "type": "Melee",
     "icon": "http://s3.hotsapi.net/img/heroes/92x93/chen.png"
   },
   {
-    "name": "Dehaka",
+    "id": 10,
+    "name": "Cho",
     "role": "Warrior",
     "type": "Melee",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/dehaka.png"
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/cho.png"
   },
   {
-    "name": "Diablo",
-    "role": "Warrior",
-    "type": "Melee",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/diablo.png"
-  },
-  {
-    "name": "E.T.C.",
-    "role": "Warrior",
-    "type": "Melee",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/etc.png"
-  },
-  {
-    "name": "Falstad",
+    "id": 11,
+    "name": "Chromie",
     "role": "Assassin",
     "type": "Ranged",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/falstad.png"
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/chromie.png"
   },
   {
-    "name": "Gall",
-    "role": "Assassin",
-    "type": "Ranged",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/gall.png"
-  },
-  {
+    "id": 12,
     "name": "D.Va",
     "role": "Warrior",
     "type": "Ranged",
     "icon": "http://s3.hotsapi.net/img/heroes/92x93/dva.png"
   },
   {
+    "id": 13,
+    "name": "Dehaka",
+    "role": "Warrior",
+    "type": "Melee",
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/dehaka.png"
+  },
+  {
+    "id": 14,
+    "name": "Diablo",
+    "role": "Warrior",
+    "type": "Melee",
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/diablo.png"
+  },
+  {
+    "id": 15,
+    "name": "E.T.C.",
+    "role": "Warrior",
+    "type": "Melee",
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/etc.png"
+  },
+  {
+    "id": 16,
+    "name": "Falstad",
+    "role": "Assassin",
+    "type": "Ranged",
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/falstad.png"
+  },
+  {
+    "id": 17,
+    "name": "Gall",
+    "role": "Assassin",
+    "type": "Ranged",
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/gall.png"
+  },
+  {
+    "id": 18,
     "name": "Garrosh",
     "role": "Warrior",
     "type": "Melee",
     "icon": "http://s3.hotsapi.net/img/heroes/92x93/garrosh.png"
   },
   {
-    "name": "Greymane",
-    "role": "Assassin",
-    "type": "Ranged",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/greymane.png"
-  },
-  {
+    "id": 19,
     "name": "Gazlowe",
     "role": "Specialist",
     "type": "Melee",
     "icon": "http://s3.hotsapi.net/img/heroes/92x93/gazlowe.png"
   },
   {
-    "name": "Illidan",
-    "role": "Assassin",
-    "type": "Melee",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/illidan.png"
-  },
-  {
-    "name": "Gul'dan",
-    "role": "Assassin",
-    "type": "Ranged",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/guldan.png"
-  },
-  {
-    "name": "Johanna",
-    "role": "Warrior",
-    "type": "Melee",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/johanna.png"
-  },
-  {
-    "name": "Jaina",
-    "role": "Assassin",
-    "type": "Ranged",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/jaina.png"
-  },
-  {
-    "name": "Kael'thas",
-    "role": "Assassin",
-    "type": "Ranged",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/kaelthas.png"
-  },
-  {
+    "id": 20,
     "name": "Genji",
     "role": "Assassin",
     "type": "Ranged",
     "icon": "http://s3.hotsapi.net/img/heroes/92x93/genji.png"
   },
   {
-    "name": "Kharazim",
-    "role": "Support",
-    "type": "Melee",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/kharazim.png"
+    "id": 21,
+    "name": "Greymane",
+    "role": "Assassin",
+    "type": "Ranged",
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/greymane.png"
   },
   {
+    "id": 22,
+    "name": "Gul'dan",
+    "role": "Assassin",
+    "type": "Ranged",
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/guldan.png"
+  },
+  {
+    "id": 23,
+    "name": "Illidan",
+    "role": "Assassin",
+    "type": "Melee",
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/illidan.png"
+  },
+  {
+    "id": 24,
+    "name": "Jaina",
+    "role": "Assassin",
+    "type": "Ranged",
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/jaina.png"
+  },
+  {
+    "id": 25,
+    "name": "Johanna",
+    "role": "Warrior",
+    "type": "Melee",
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/johanna.png"
+  },
+  {
+    "id": 26,
+    "name": "Kael'thas",
+    "role": "Assassin",
+    "type": "Ranged",
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/kaelthas.png"
+  },
+  {
+    "id": 27,
     "name": "Kerrigan",
     "role": "Assassin",
     "type": "Melee",
     "icon": "http://s3.hotsapi.net/img/heroes/92x93/kerrigan.png"
   },
   {
-    "name": "Li-Ming",
-    "role": "Assassin",
-    "type": "Ranged",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/liming.png"
-  },
-  {
-    "name": "Li Li",
+    "id": 28,
+    "name": "Kharazim",
     "role": "Support",
-    "type": "Ranged",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/lili.png"
+    "type": "Melee",
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/kharazim.png"
   },
   {
+    "id": 29,
     "name": "Leoric",
     "role": "Warrior",
     "type": "Melee",
     "icon": "http://s3.hotsapi.net/img/heroes/92x93/leoric.png"
   },
   {
-    "name": "Lunara",
-    "role": "Assassin",
-    "type": "Ranged",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/lunara.png"
-  },
-  {
-    "name": "Lt. Morales",
+    "id": 30,
+    "name": "Li Li",
     "role": "Support",
     "type": "Ranged",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/ltmorales.png"
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/lili.png"
   },
   {
-    "name": "Malthael",
+    "id": 31,
+    "name": "Li-Ming",
     "role": "Assassin",
-    "type": "Melee",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/malthael.png"
+    "type": "Ranged",
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/liming.png"
   },
   {
+    "id": 33,
     "name": "Lúcio",
     "role": "Support",
     "type": "Ranged",
     "icon": "http://s3.hotsapi.net/img/heroes/92x93/lucio.png"
   },
   {
-    "name": "Medivh",
-    "role": "Specialist",
+    "id": 32,
+    "name": "Lt. Morales",
+    "role": "Support",
     "type": "Ranged",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/medivh.png"
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/ltmorales.png"
   },
   {
+    "id": 34,
+    "name": "Lunara",
+    "role": "Assassin",
+    "type": "Ranged",
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/lunara.png"
+  },
+  {
+    "id": 35,
     "name": "Malfurion",
     "role": "Support",
     "type": "Ranged",
     "icon": "http://s3.hotsapi.net/img/heroes/92x93/malfurion.png"
   },
   {
-    "name": "Nazeebo",
+    "id": 36,
+    "name": "Malthael",
+    "role": "Assassin",
+    "type": "Melee",
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/malthael.png"
+  },
+  {
+    "id": 37,
+    "name": "Medivh",
     "role": "Specialist",
     "type": "Ranged",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/nazeebo.png"
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/medivh.png"
   },
   {
-    "name": "Nova",
-    "role": "Assassin",
-    "type": "Ranged",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/nova.png"
-  },
-  {
+    "id": 38,
     "name": "Muradin",
     "role": "Warrior",
     "type": "Melee",
     "icon": "http://s3.hotsapi.net/img/heroes/92x93/muradin.png"
   },
   {
-    "name": "Probius",
+    "id": 40,
+    "name": "Nazeebo",
     "role": "Specialist",
     "type": "Ranged",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/probius.png"
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/nazeebo.png"
   },
   {
-    "name": "Ragnaros",
-    "role": "Assassin",
-    "type": "Melee",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/ragnaros.png"
-  },
-  {
-    "name": "Rehgar",
-    "role": "Support",
-    "type": "Melee",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/rehgar.png"
-  },
-  {
-    "name": "Raynor",
-    "role": "Assassin",
-    "type": "Ranged",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/raynor.png"
-  },
-  {
-    "name": "Samuro",
-    "role": "Assassin",
-    "type": "Melee",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/samuro.png"
-  },
-  {
-    "name": "Rexxar",
-    "role": "Warrior",
-    "type": "Ranged",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/rexxar.png"
-  },
-  {
-    "name": "Sgt. Hammer",
-    "role": "Specialist",
-    "type": "Ranged",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/sgthammer.png"
-  },
-  {
-    "name": "Stitches",
-    "role": "Warrior",
-    "type": "Melee",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/stitches.png"
-  },
-  {
-    "name": "Sonya",
-    "role": "Warrior",
-    "type": "Melee",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/sonya.png"
-  },
-  {
-    "name": "Stukov",
-    "role": "Support",
-    "type": "Melee",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/stukov.png"
-  },
-  {
+    "id": 39,
     "name": "Murky",
     "role": "Specialist",
     "type": "Melee",
     "icon": "http://s3.hotsapi.net/img/heroes/92x93/murky.png"
   },
   {
-    "name": "The Butcher",
+    "id": 43,
+    "name": "Ragnaros",
     "role": "Assassin",
     "type": "Melee",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/thebutcher.png"
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/ragnaros.png"
   },
   {
-    "name": "Sylvanas",
+    "id": 41,
+    "name": "Nova",
+    "role": "Assassin",
+    "type": "Ranged",
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/nova.png"
+  },
+  {
+    "id": 42,
+    "name": "Probius",
     "role": "Specialist",
     "type": "Ranged",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/sylvanas.png"
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/probius.png"
   },
   {
-    "name": "Thrall",
-    "role": "Assassin",
-    "type": "Melee",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/thrall.png"
-  },
-  {
-    "name": "The Lost Vikings",
-    "role": "Specialist",
-    "type": "Melee",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/thelostvikings.png"
-  },
-  {
-    "name": "Tychus",
+    "id": 44,
+    "name": "Raynor",
     "role": "Assassin",
     "type": "Ranged",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/tychus.png"
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/raynor.png"
   },
   {
-    "name": "Tracer",
-    "role": "Assassin",
-    "type": "Ranged",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/tracer.png"
-  },
-  {
-    "name": "Tyrande",
+    "id": 45,
+    "name": "Rehgar",
     "role": "Support",
-    "type": "Ranged",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/tyrande.png"
+    "type": "Melee",
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/rehgar.png"
   },
   {
-    "name": "Tyrael",
+    "id": 47,
+    "name": "Samuro",
+    "role": "Assassin",
+    "type": "Melee",
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/samuro.png"
+  },
+  {
+    "id": 46,
+    "name": "Rexxar",
+    "role": "Warrior",
+    "type": "Ranged",
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/rexxar.png"
+  },
+  {
+    "id": 49,
+    "name": "Sonya",
     "role": "Warrior",
     "type": "Melee",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/tyrael.png"
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/sonya.png"
   },
   {
-    "name": "Valeera",
-    "role": "Assassin",
+    "id": 50,
+    "name": "Stitches",
+    "role": "Warrior",
     "type": "Melee",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/valeera.png"
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/stitches.png"
   },
   {
+    "id": 51,
+    "name": "Stukov",
+    "role": "Support",
+    "type": "Melee",
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/stukov.png"
+  },
+  {
+    "id": 48,
+    "name": "Sgt. Hammer",
+    "role": "Specialist",
+    "type": "Ranged",
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/sgthammer.png"
+  },
+  {
+    "id": 53,
     "name": "Tassadar",
     "role": "Support",
     "type": "Ranged",
     "icon": "http://s3.hotsapi.net/img/heroes/92x93/tassadar.png"
   },
   {
-    "name": "Valla",
-    "role": "Assassin",
+    "id": 52,
+    "name": "Sylvanas",
+    "role": "Specialist",
     "type": "Ranged",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/valla.png"
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/sylvanas.png"
   },
   {
+    "id": 56,
+    "name": "Thrall",
+    "role": "Assassin",
+    "type": "Melee",
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/thrall.png"
+  },
+  {
+    "id": 57,
+    "name": "Tracer",
+    "role": "Assassin",
+    "type": "Ranged",
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/tracer.png"
+  },
+  {
+    "id": 55,
+    "name": "The Lost Vikings",
+    "role": "Specialist",
+    "type": "Melee",
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/thelostvikings.png"
+  },
+  {
+    "id": 58,
+    "name": "Tychus",
+    "role": "Assassin",
+    "type": "Ranged",
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/tychus.png"
+  },
+  {
+    "id": 59,
+    "name": "Tyrael",
+    "role": "Warrior",
+    "type": "Melee",
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/tyrael.png"
+  },
+  {
+    "id": 54,
+    "name": "The Butcher",
+    "role": "Assassin",
+    "type": "Melee",
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/thebutcher.png"
+  },
+  {
+    "id": 60,
+    "name": "Tyrande",
+    "role": "Support",
+    "type": "Ranged",
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/tyrande.png"
+  },
+  {
+    "id": 61,
+    "name": "Uther",
+    "role": "Support",
+    "type": "Melee",
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/uther.png"
+  },
+  {
+    "id": 62,
+    "name": "Valeera",
+    "role": "Assassin",
+    "type": "Melee",
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/valeera.png"
+  },
+  {
+    "id": 64,
     "name": "Varian",
     "role": "Multiclass",
     "type": "Melee",
     "icon": "http://s3.hotsapi.net/img/heroes/92x93/varian.png"
   },
   {
+    "id": 63,
+    "name": "Valla",
+    "role": "Assassin",
+    "type": "Ranged",
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/valla.png"
+  },
+  {
+    "id": 66,
     "name": "Zagara",
     "role": "Specialist",
     "type": "Ranged",
     "icon": "http://s3.hotsapi.net/img/heroes/92x93/zagara.png"
   },
   {
+    "id": 65,
     "name": "Xul",
     "role": "Specialist",
     "type": "Melee",
     "icon": "http://s3.hotsapi.net/img/heroes/92x93/xul.png"
   },
   {
+    "id": 67,
     "name": "Zarya",
     "role": "Warrior",
     "type": "Ranged",
     "icon": "http://s3.hotsapi.net/img/heroes/92x93/zarya.png"
   },
   {
+    "id": 68,
     "name": "Zeratul",
     "role": "Assassin",
     "type": "Melee",
     "icon": "http://s3.hotsapi.net/img/heroes/92x93/zeratul.png"
   },
   {
-    "name": "Kel'Thuzad",
-    "role": "Assassin",
-    "type": "Ranged",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/kelthuzad.png"
-  },
-  {
+    "id": 69,
     "name": "Zul'jin",
     "role": "Assassin",
     "type": "Ranged",
     "icon": "http://s3.hotsapi.net/img/heroes/92x93/zuljin.png"
   },
   {
-    "name": "Junkrat",
-    "role": "Assassin",
-    "type": "Ranged",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/junkrat.png"
-  },
-  {
+    "id": 71,
     "name": "Ana",
     "role": "Support",
     "type": "Ranged",
     "icon": "http://s3.hotsapi.net/img/heroes/92x93/ana.png"
   },
   {
-    "name": "Uther",
-    "role": "Support",
+    "id": 72,
+    "name": "Junkrat",
+    "role": "Assassin",
+    "type": "Ranged",
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/junkrat.png"
+  },
+  {
+    "id": 70,
+    "name": "Kel'Thuzad",
+    "role": "Assassin",
+    "type": "Ranged",
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/kelthuzad.png"
+  },
+  {
+    "id": 4,
+    "name": "Arthas",
+    "role": "Warrior",
     "type": "Melee",
-    "icon": "http://s3.hotsapi.net/img/heroes/92x93/uther.png"
+    "icon": "http://s3.hotsapi.net/img/heroes/92x93/arthas.png"
   }
 ]

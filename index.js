@@ -46,6 +46,9 @@ var draft1 = {
 // hotsDraftController.newHotsDraftLobby(draft1);
 
 //This function gets the heroes
+//NOTE: If you run this function, you must edit the hotsHeroes.json file, put
+//NOTE: the data in an array, and add the commas to ensure its in the right
+//NOTE: format for a proper .json file
 // hotsApiService.getHotsHeroes('http://hotsapi.net/api/v1/heroes');
 
 //Routes

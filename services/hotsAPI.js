@@ -19,6 +19,7 @@ module.exports = {
     axios.get(url).then(function(res) {
       for (var i = 0; i < res.data.length; i++) {
         let hero = {
+          id: i,
           name: res.data[i].name,
           role: res.data[i].role,
           type: res.data[i].type,

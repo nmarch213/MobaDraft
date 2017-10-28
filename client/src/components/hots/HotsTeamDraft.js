@@ -5,7 +5,7 @@ import Hero from './Hero';
 class HotsTeamDraft extends Component {
   showHeroes = (team, heroes) => {
     return team.map(hero => (
-      <div key={heroes[hero].name} className="row">
+      <div key={heroes[hero].id} className="row">
         <Hero hero={heroes[hero]} />
       </div>
     ));

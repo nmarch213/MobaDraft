@@ -20,11 +20,12 @@ export default function(state = {}, action) {
         Lobby: action.payload
       };
     case TEAM_ONE_HERO_SELECTED:
-      console.log(state);
       return {
         ...state,
         Lobby: {
+          ...state.Lobby,
           HotsDraft: {
+            ...state.Lobby.HotsDraft,
             teamOneDraft: state.Lobby.HotsDraft.teamOneDraft.concat(
               action.payload
             )

@@ -8,11 +8,7 @@ class Hero extends Component {
     return (
       <div className="card" key={hero.id}>
         <div className="card-image">
-          <img
-            className="card-img-top"
-            src={hero.icon_url.size}
-            alt={hero.short_name}
-          />
+          <img className="card-img-top" src={hero.icon} alt={hero.name} />
         </div>
       </div>
     );
