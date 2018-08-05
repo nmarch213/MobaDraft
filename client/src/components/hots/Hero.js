@@ -5,13 +5,7 @@ class Hero extends Component {
 
   render() {
     const { hero } = this.props;
-    return (
-      <div className="card" key={hero.id}>
-        <div className="card-image">
-          <img className="card-img-top" src={hero.icon} alt={hero.name} />
-        </div>
-      </div>
-    );
+    return <img className="heroPortrait" src={hero.icon} alt={hero.name} />;
   }
 }
 

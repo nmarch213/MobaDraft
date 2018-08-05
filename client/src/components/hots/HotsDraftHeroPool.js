@@ -5,9 +5,9 @@ import Hero from './Hero';
 class HotsDraftHeroPool extends Component {
   renderHeroPool(hotsHeroes) {
     return hotsHeroes.map(hero => (
-      <button key={hero.name} onClick={() => this.props.onClick(hero)}>
+      <div key={hero.id} onClick={() => this.props.onClick(hero)}>
         <Hero hero={hero} />
-      </button>
+      </div>
     ));
   }
 

@@ -7,3 +7,8 @@ canvas {
   position: fixed;
   z-index: -1;
 }
+
+div .heroPortrait {
+  height: 2.5em;
+  border-radius: 50%;
+}

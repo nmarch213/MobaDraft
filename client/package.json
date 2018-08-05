@@ -9,19 +9,19 @@
   },
   "dependencies": {
     "axios": "^0.16.2",
-    "install": "^0.10.1",
-    "npm": "^5.4.2",
+    "install": "^0.10.4",
+    "npm": "^5.10.0",
     "react": "^15.6.2",
     "react-dom": "^15.6.2",
-    "react-particles-js": "^2.0.0",
-    "react-redux": "^5.0.6",
-    "react-router-dom": "^4.2.2",
+    "react-particles-js": "^2.3.0",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "1.0.13",
     "redux": "^3.7.2",
-    "redux-form": "^7.0.4",
-    "redux-thunk": "^2.2.0",
-    "socket.io": "^2.0.3",
-    "socket.io-client": "^2.0.3"
+    "redux-form": "^7.4.2",
+    "redux-thunk": "^2.3.0",
+    "socket.io": "^2.1.1",
+    "socket.io-client": "^2.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
