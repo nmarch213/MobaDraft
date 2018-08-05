@@ -11,6 +11,7 @@ const store = createStore(
   {},
   compose(
     applyMiddleware(reduxThunk),
+    // To use this, you must have the redux devtool extension
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
   )
 );
